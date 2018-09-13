@@ -1,6 +1,7 @@
 # Ng Landing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
+See live demo at https://landing-c3db3.firebaseapp.com
 
 ## Development server
 
