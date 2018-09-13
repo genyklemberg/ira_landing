@@ -1,0 +1,19 @@
+@import './styles/scss/_varibels.scss'; /*Import varibels*/
+
+/*Roboto*/
+@font-face {
+  font-family: 'Gothic';
+  // src: url('./assets/fonts/century-gothic/Century_Gothic.ttf');
+  font-style: normal;
+
+  font-weight: 400;
+  src: local('Gothic'),
+    /* Modern Browsers */
+  url('./assets/fonts/century-gothic/Century_Gothic.ttf')
+}
+
+
+//@font-face {
+//  font-family: "HelveticaNeueCyrBlack";
+//  src: url(font-path("HelveticaNeueCyr-Black.otf"));
+//}

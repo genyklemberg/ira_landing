@@ -1,18 +1,18 @@
 $mat-primary: (
-    50 : #e8eaf6,
-    100 : #c5cbe9,
-    200 : #9fa8da,
-    300 : #7985cb,
-    400 : #5c6bc0,
-    500 : #3f51b5,
-    600 : #394aae,
-    700 : #3140a5,
-    800 : #29379d,
-    900 : #1b278d,
-    A100 : #c6cbff,
-    A200 : #939dff,
-    A400 : #606eff,
-    A700 : #4757ff,
+    50 : #E5ECE9,
+    100 : #BDCFC7,
+    200 : #92AFA2,
+    300 : #668E7D,
+    400 : #457661,
+    500 : #245E45,
+    600 : #20563E,
+    700 : #1B4C36,
+    800 : #16422E,
+    900 : #0D311F,
+    A100 : #6EFFAF,
+    A200 : #3BFF93,
+    A400 : #08FF77,
+    A700 : #00ED6A,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -32,20 +32,20 @@ $mat-primary: (
 );
 
 $mat-accent: (
-    50 : #fff8e1,
-    100 : #ffecb5,
-    200 : #ffe083,
-    300 : #ffd451,
-    400 : #ffca2c,
-    500 : #ffc107,
-    600 : #ffbb06,
-    700 : #ffb305,
-    800 : #ffab04,
-    900 : #ff9e02,
-    A100 : #ffffff,
-    A200 : #fffaf2,
-    A400 : #ffe4bf,
-    A700 : #ffd9a6,
+    50 : #E0EEEA,
+    100 : #B3D4CA,
+    200 : #80B7A7,
+    300 : #4D9A84,
+    400 : #268469,
+    500 : #006E4F,
+    600 : #006648,
+    700 : #005B3F,
+    800 : #005136,
+    900 : #003F26,
+    A100 : #74FFBB,
+    A200 : #41FFA2,
+    A400 : #0EFF89,
+    A700 : #00F47D,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -112,7 +112,7 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
     .default-bg {
         background: #ffffff !important;
     }
-    /* Hopscotch Tour */ 
+    /* Hopscotch Tour */
     div.hopscotch-bubble {
         border-color: $primary-dark;
     }
