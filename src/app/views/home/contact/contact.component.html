@@ -1,45 +1,131 @@
 <section id="contact-section" class="home-section" [ngClass]="{'light-gray': backgroundGray}">
   <div class="container">
     <div class="section-header">
-      <h2>Send Us An Email</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, error.</p>
+      <h2>Contact block</h2>
     </div>
-    <form [formGroup]="contactForm">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.13677680529!2d24.007000215888546!3d49.821094440392045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae78f60dd6d33:0xf9512d48b07dc0bb!2z0LLRg9C70LjRhtGPINCa0YPQu9C40LrRltCy0YHRjNC60LAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1537267041451"
+            width="95%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <form method="POST" #f="ngForm"
+          novalidate [formGroup]="contactForm" class="submit-form">
+
+      <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap">
+        <div fxFlex="100">
+          <div class="pb-1">
+            <p>Contact Us</p>
+          </div>
+        </div>
+      </div>
+
       <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap">
         <div fxFlex="100">
           <div class="pb-1">
             <mat-form-field class="full-width">
-              <input matInput name="name" [formControl]="contactForm.controls['name']" placeholder="Your Name">
+              <input matInput name="name" [formControl]="contactForm.controls['name']" placeholder="Ім’я та Прізвище*">
             </mat-form-field>
-            <small *ngIf="contactForm.controls.name.touched && contactForm.controls.name.errors?.required" class="form-error-msg">Name is required</small>
+            <small *ngIf="contactForm.controls.name.touched && contactForm.controls.name.errors?.required"
+                   class="form-error-msg">Ім’я та Прізвище обов’язкові</small>
           </div>
           <div class="pb-1">
             <mat-form-field class="full-width">
-              <input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Your Email">
+              <input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Ваш Email*">
             </mat-form-field>
-            <small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email" class="form-error-msg">Invalid Email</small>
+            <small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email"
+                   class="form-error-msg">Неправильний Email</small>
           </div>
 
         </div>
         <div fxFlex="100">
-          <div class="pb-1">
-            <mat-form-field class="full-width">
-              <input matInput name="subject" [formControl]="contactForm.controls['subject']" placeholder="Subject">
-            </mat-form-field>
-            <small *ngIf="contactForm.controls.subject.touched && contactForm.controls.subject.errors?.required" class="form-error-msg">Subject is required</small>
-          </div>
-          <div class="pb-1">
-            <mat-form-field class="full-width">
-              <textarea matInput row="8" name="message" [formControl]="contactForm.controls['message']" placeholder="Message"></textarea>
-            </mat-form-field>
-            <small *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors?.required" class="form-error-msg">Message is required</small>
-          </div>
+            <div class="pb-1">
+              <mat-form-field class="full-width">
+                <input matInput name="mobile" [formControl]="contactForm.controls['mobile']"
+                       placeholder="Ваш телефон" (keypress)="onlyNumberKey($event)">
+              </mat-form-field>
+            </div>
         </div>
 
         <div fxFlex="100">
-          <button mat-fab color="primary" [disabled]="!contactForm.valid"><mat-icon>send</mat-icon></button>
+          <button
+            mat-raised-button mat-lg-button class="intro-cta"
+            [disabled]="!contactForm.valid" color="accent" (click)="clear()">Відправити <mat-icon>send</mat-icon></button>
         </div>
+
       </div>
     </form>
+    <!--<form class="form-material set-submit-input" name="Contactuser" novalidate="">-->
+      <!--<div class="form-group set-submit-box mt0">-->
+        <!--<input type="text" name="first_name" class="form-control" id="first_name" required="required"-->
+               <!--data-ng-model="ContactFName" data-ng-required="true">-->
+        <!--<span class="form-bar"></span>-->
+        <!--<label class="float-label" for="first_name">Ім’я та Прізвище</label>-->
+      <!--</div>-->
+
+      <!--<div class="form-group set-submit-box">-->
+        <!--<input type="number" name="contact_no" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" id="contact_no" required="required" data-ng-model="ContactNO" data-ng-required="true">-->
+        <!--<span class="form-bar"></span>-->
+        <!--<label class="float-label" for="contact_no">Телефон</label>-->
+      <!--</div>-->
+
+      <!--<div class="form-group set-submit-box">-->
+        <!--<input type="text" name="contact_email" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" id="contact_email" required="required" data-ng-model="ContactEmail" data-ng-required="true">-->
+        <!--<span class="form-bar"></span>-->
+        <!--<label class="float-label" for="contact_email">Email</label>-->
+      <!--</div>-->
+
+      <!--<div class="form-group set-submit-box">-->
+        <!--<button id="submit_contact" type="button" class="btn btn-primary submit_contact common-btn colored-button float-button-light  pull-right"-->
+                <!--data-angular-ripple="" data-ng-click="send_form()">-->
+          <!--Відправити <i class="fa fa-paper-plane ml5" aria-hidden="true"></i>-->
+        <!--</button>-->
+      <!--</div>-->
+    <!--</form>-->
+
   </div>
 </section>
+
+<!--<section id="contact-section" class="home-section" [ngClass]="{'light-gray': backgroundGray}">-->
+  <!--<div class="container">-->
+    <!--<div class="section-header">-->
+      <!--<h2>Send Us An Email</h2>-->
+      <!--<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, error.</p>-->
+    <!--</div>-->
+    <!--<form [formGroup]="contactForm">-->
+      <!--<div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap">-->
+        <!--<div fxFlex="100">-->
+          <!--<div class="pb-1">-->
+            <!--<mat-form-field class="full-width">-->
+              <!--<input matInput name="name" [formControl]="contactForm.controls['name']" placeholder="Your Name">-->
+            <!--</mat-form-field>-->
+            <!--<small *ngIf="contactForm.controls.name.touched && contactForm.controls.name.errors?.required" class="form-error-msg">Name is required</small>-->
+          <!--</div>-->
+          <!--<div class="pb-1">-->
+            <!--<mat-form-field class="full-width">-->
+              <!--<input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Your Email">-->
+            <!--</mat-form-field>-->
+            <!--<small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email" class="form-error-msg">Invalid Email</small>-->
+          <!--</div>-->
+
+        <!--</div>-->
+        <!--<div fxFlex="100">-->
+          <!--<div class="pb-1">-->
+            <!--<mat-form-field class="full-width">-->
+              <!--<input matInput name="subject" [formControl]="contactForm.controls['subject']" placeholder="Subject">-->
+            <!--</mat-form-field>-->
+            <!--<small *ngIf="contactForm.controls.subject.touched && contactForm.controls.subject.errors?.required" class="form-error-msg">Subject is required</small>-->
+          <!--</div>-->
+          <!--<div class="pb-1">-->
+            <!--<mat-form-field class="full-width">-->
+              <!--<textarea matInput row="8" name="message" [formControl]="contactForm.controls['message']" placeholder="Message"></textarea>-->
+            <!--</mat-form-field>-->
+            <!--<small *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors?.required" class="form-error-msg">Message is required</small>-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <!--<div fxFlex="100">-->
+          <!--<button mat-fab color="primary" [disabled]="!contactForm.valid"><mat-icon>send</mat-icon></button>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</form>-->
+  <!--</div>-->
+<!--</section>-->

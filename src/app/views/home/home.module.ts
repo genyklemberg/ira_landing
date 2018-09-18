@@ -40,6 +40,7 @@ import { AllSectionsComponent } from './all-sections.component';
 
 import { WINDOW_PROVIDERS } from '../../shared/helpers/window.helper';
 import {WorksComponent} from './works/works.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import {WorksComponent} from './works/works.component';
     MatSnackBarModule,
     FlexLayoutModule,
     NguCarouselModule,
+    HttpClientModule,
     RouterModule.forChild(HomeRoutes)
   ],
   declarations: [
