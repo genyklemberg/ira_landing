@@ -1,12 +1,30 @@
+.bg-opacity-layer {
+  background: rgba(0,0,0,.98);
+  opacity: .45;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
 #index-banner {
-  height: 720px;
+  //height: 720px;
+  height: -webkit-fill-available;
   width: 100%;
+  //min-height: 100%;
   .videoContainer {
     position: absolute;
     right: 0;
     bottom: 0;
+    height: auto;
     min-width: 100%;
     min-height: 100%;
+
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+    ////z-index: -50;
   }
 
   .content {
@@ -16,7 +34,7 @@
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
-
+    z-index: 2;
     .btn-container {
       display: flex;
       justify-content: space-between;
