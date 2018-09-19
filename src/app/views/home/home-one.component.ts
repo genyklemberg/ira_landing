@@ -6,12 +6,12 @@ import { LandingFixService } from '../../shared/services/landing-fix.service';
   template: `<app-header></app-header>
   <app-intro></app-intro>
   <app-portfolio></app-portfolio>
-  <app-services [backgroundGray]="true"></app-services>
-  <app-testimonials-carousel></app-testimonials-carousel>
+  <app-works></app-works>
   <app-cta></app-cta>
+  <app-services [backgroundGray]="true"></app-services>
   <app-pricings></app-pricings>
-  <app-contact [backgroundGray]="true"></app-contact>
-  <app-footer></app-footer>`
+  <app-contact></app-contact>
+  <!--<app-testimonials-carousel></app-testimonials-carousel>-->`
 })
 export class HomeOneComponent implements OnInit, OnDestroy {
   constructor(
@@ -24,6 +24,6 @@ export class HomeOneComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.fix.removeFix();
   }
-  
+
 
 }

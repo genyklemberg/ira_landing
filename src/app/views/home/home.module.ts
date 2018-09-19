@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { 
+import {
   MatIconModule,
   MatCardModule,
   MatMenuModule,
@@ -39,6 +39,8 @@ import { DemoComponent } from './demo/demo.component';
 import { AllSectionsComponent } from './all-sections.component';
 
 import { WINDOW_PROVIDERS } from '../../shared/helpers/window.helper';
+import {WorksComponent} from './works/works.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -59,26 +61,28 @@ import { WINDOW_PROVIDERS } from '../../shared/helpers/window.helper';
     MatSnackBarModule,
     FlexLayoutModule,
     NguCarouselModule,
+    HttpClientModule,
     RouterModule.forChild(HomeRoutes)
   ],
   declarations: [
     HomeOneComponent,
-    HomeTwoComponent, 
-    HeaderComponent, 
+    HomeTwoComponent,
+    HeaderComponent,
     IntroOneComponent,
-    IntroTwoComponent, 
-    PortfolioComponent, 
-    ServicesComponent, 
-    CtaComponent, 
-    PricingsComponent, 
-    ContactComponent, 
-    FooterComponent, 
-    TestimonialsComponent, 
-    PortfolioCarouselComponent,  
-    TestimonialsCarouselComponent, 
-    ServicesCarouselComponent, 
+    IntroTwoComponent,
+    PortfolioComponent,
+    ServicesComponent,
+    CtaComponent,
+    PricingsComponent,
+    ContactComponent,
+    FooterComponent,
+    TestimonialsComponent,
+    PortfolioCarouselComponent,
+    TestimonialsCarouselComponent,
+    ServicesCarouselComponent,
     DemoComponent,
-    AllSectionsComponent
+    AllSectionsComponent,
+    WorksComponent
   ],
   providers: [WINDOW_PROVIDERS]
 

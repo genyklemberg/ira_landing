@@ -6,15 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro-one.component.scss']
 })
 export class IntroOneComponent implements OnInit {
+  status = 'Mute';
 
   constructor() { }
 
   ngOnInit() {
   }
-  buyEgret() {
-    window.open('https://themeforest.net/item/egret-angular-4-material-design-admin-template/20161805?ref=mh_rafi');
-  }
-  getNGLanding() {
-    window.open('');
+
+  pauseAudio() {
+    const video = document.getElementById('myVideo') as HTMLMediaElement;
+
+    if (video.muted) {
+      video.muted = false;
+      this.status = 'Mute';
+    } else {
+      video.muted = true;
+      this.status = 'Unmute';
+    }
   }
 }
