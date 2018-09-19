@@ -2,17 +2,37 @@
   <div class="bg-opacity-layer"></div>
   <!-- The video -->
   <video autoplay muted loop class="videoContainer" id="myVideo">
-    <source src="../../../../assets/video/lounge2.mp4" type="video/mp4">
+    <!--<source src="../../../../assets/video/lounge2.mp4" type="video/mp4">-->
   </video>
+
+  <!--<div fxLayout="row" fxLayout.lt-sm="column">-->
+    <!--<button mat-raised-button mat-lg-button color="primary" (click)="buyEgret()"><mat-icon>add_shopping_cart</mat-icon> BUY EGRET</button>-->
+    <!--<span fxFlex="20px"></span>-->
+    <!--<button mat-raised-button mat-lg-button id="frontend-btn" (click)="getNGLanding()"><mat-icon>get_app</mat-icon> ANGULAR LANDING</button>-->
+  <!--</div>-->
 
   <!-- Optional: some overlay text to describe the video -->
   <div class="content">
     <div class="row text-center">
       <h1>КОТЕДЖІ НА КУЛИКІВСЬКІЙ</h1>
-      <div class="btn-container">
-        <button mat-raised-button mat-lg-button class="intro-cta"><mat-icon>add_shopping_cart</mat-icon> Купити</button>
-        <button (click)="pauseAudio()" mat-raised-button mat-lg-button class="intro-cta"><mat-icon>settings_voice</mat-icon>{{ status }}</button>
+
+      <div fxLayout="row" fxLayout.lt-sm="column" class="btn-container">
+        <button mat-raised-button mat-lg-button
+                color="primary" class="intro-cta">
+          <mat-icon>add_shopping_cart</mat-icon> Купити
+        </button>
+        <!--<button mat-raised-button mat-lg-button color="primary" (click)="buyEgret()"><mat-icon>add_shopping_cart</mat-icon> BUY EGRET</button>-->
+        <span fxFlex="20px"></span>
+        <button (click)="pauseAudio()" mat-raised-button mat-lg-button class="intro-cta">
+          <mat-icon>settings_voice</mat-icon>{{ status }}
+        </button>
+        <!--<button mat-raised-button mat-lg-button id="frontend-btn" (click)="getNGLanding()"><mat-icon>get_app</mat-icon> ANGULAR LANDING</button>-->
       </div>
+
+      <!--<div class="btn-container">-->
+        <!--<button mat-raised-button mat-lg-button class="intro-cta"><mat-icon>add_shopping_cart</mat-icon> Купити</button>-->
+        <!--<button (click)="pauseAudio()" mat-raised-button mat-lg-button class="intro-cta"><mat-icon>settings_voice</mat-icon>{{ status }}</button>-->
+      <!--</div>-->
     </div>
   </div>
 </section>

@@ -1,42 +1,67 @@
 .container {
   position: relative;
 
-  iframe {
-    position: absolute;
-    z-index: 5;
-  }
-
-  .submit-form {
-    width: 40%;
-    //height: 100%;
-    position: absolute;
-    z-index: 10;
-    top: 70px;
-    left: 50%;
-    // background: rgba(0, 0, 0, .24);
-    background: #fff;
-
-    .intro-cta {
+  .section-header {
+    p {
       max-width: 100%;
-      //margin-left: auto;
-      //margin-right: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
     }
 
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0,0,0,0);
-      border: 0;
+    .main-text {
+      text-align: center;
+      margin: 20px auto;
     }
-
+    .text-center {
+      text-align: center;
+      span {
+        color: #006e4f;
+      }
+    }
   }
+
+  .iframe-wrap {
+    position: relative;
+
+    iframe {
+      position: absolute;
+      z-index: 5;
+    }
+  }
+
+  .form-wrap {
+    position: relative;
+    height: 100%;  // doesn't work
+    width: 500px;  // doesn't work
+    .submit-form {
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      background: #fff;
+      padding: 20px;
+      width: 300px;
+
+      .intro-cta {
+        max-width: 100%;
+        //margin-left: auto;
+        //margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+      }
+
+    }
+  }
+
 }
 

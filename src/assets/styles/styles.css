@@ -3,7 +3,7 @@
     Author: Mahmudul Hasan Rafi - mhrafi.com
 */
 
-/* 
+/*
 # Globals
 # Scroll Bar
 # Home
@@ -60,17 +60,17 @@ a {
 p {
     margin: 0 0 16px;
 }
-.h1, 
-.h2, 
-.h3, 
-.h4, 
-.h5, 
-.h6, 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
     margin-bottom: .5rem;
     font-weight: 400;
@@ -81,23 +81,23 @@ h6 {
 h1 {
     font-size: 2rem;
 }
-.h2, 
+.h2,
 h2 {
     font-size: 1.75rem;
 }
-.h3, 
+.h3,
 h3 {
     font-size: 1.5rem;
 }
-.h4, 
+.h4,
 h4 {
     font-size: 1.25rem;
 }
-.h5, 
+.h5,
 h5 {
     font-size: 1rem;
 }
-.h6, 
+.h6,
 h6 {
     font-size: .875rem;
 }
@@ -497,7 +497,7 @@ code {
     min-height: 200px;
 }
 .chart {
-    display: block; 
+    display: block;
     width: 100%;
 }
 .form-error-msg {
@@ -572,12 +572,12 @@ code {
     margin: auto;
 }
 
-mat-list a[mat-list-item] .mat-list-item-content, 
-mat-list mat-list-item .mat-list-item-content, 
-mat-nav-list a[mat-list-item] .mat-list-item-content, 
+mat-list a[mat-list-item] .mat-list-item-content,
+mat-list mat-list-item .mat-list-item-content,
+mat-nav-list a[mat-list-item] .mat-list-item-content,
 mat-nav-list mat-list-item .mat-list-item-content,
 [mat-menu-item],
-.mat-option, 
+.mat-option,
 body .mat-select-trigger {
     font-size: .875rem !important;
 }
@@ -629,11 +629,11 @@ body .mat-select-trigger {
     50% { -webkit-transform: scale(1.0) }
 }
 @keyframes sk-bounce {
-    0%, 100% { 
+    0%, 100% {
         transform: scale(0.0);
         -webkit-transform: scale(0.0);
-    } 
-    50% { 
+    }
+    50% {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
     }

@@ -18,11 +18,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NguCarouselModule } from '@ngu/carousel';
 // import { CommonDirectivesModule } from '../../directives/common/common-directives.module';
 import { SharedModule } from '../../shared/shared.module';
-import { HomeRoutes } from "./home.routing";
+import { HomeRoutes } from './home.routing';
 
 import { HomeOneComponent } from './home-one.component';
 import { HomeTwoComponent } from './home-two.component';
-import { HeaderComponent } from './header/header.component';
 import { IntroOneComponent } from './intro-one/intro-one.component';
 import { IntroTwoComponent } from './intro-two/intro-two.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -41,6 +40,7 @@ import { AllSectionsComponent } from './all-sections.component';
 import { WINDOW_PROVIDERS } from '../../shared/helpers/window.helper';
 import {WorksComponent} from './works/works.component';
 import {HttpClientModule} from '@angular/common/http';
+import {HeaderComponent} from './header/header.component';
 
 
 @NgModule({
