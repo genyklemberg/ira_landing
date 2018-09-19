@@ -8,3 +8,11 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+@media (max-width: 992px) {
+  .home-cta {
+    .button-wrap {
+      margin-bottom: 20px;
+    }
+  }
+}

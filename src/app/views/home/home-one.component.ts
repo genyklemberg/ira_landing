@@ -10,7 +10,7 @@ import { LandingFixService } from '../../shared/services/landing-fix.service';
   <app-cta></app-cta>
   <app-services [backgroundGray]="true"></app-services>
   <app-pricings></app-pricings>
-  <app-contact></app-contact>
+  <app-contact [backgroundGray]="true"></app-contact>
   <!--<app-testimonials-carousel></app-testimonials-carousel>-->`
 })
 export class HomeOneComponent implements OnInit, OnDestroy {

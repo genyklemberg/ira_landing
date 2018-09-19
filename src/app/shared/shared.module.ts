@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { 
+import {
   MatSidenavModule,
   MatListModule,
   MatTooltipModule,
@@ -40,7 +40,7 @@ const classesToInclude = [
   AppLoaderComponent,
   FontSizeDirective,
   ScrollToDirective
-]
+];
 
 @NgModule({
   imports: [

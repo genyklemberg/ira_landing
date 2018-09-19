@@ -48,9 +48,9 @@ export class ContactComponent implements OnInit {
   //   form.reset();
   // }
   //
-  // onlyNumberKey(event) {
-  //   return (event.charCode === 8 || event.charCode === 0)
-  //     ? null : event.charCode >= 48 && event.charCode <= 57;
-  // }
+  onlyNumberKey(event) {
+    return (event.charCode === 8 || event.charCode === 0)
+      ? null : event.charCode >= 48 && event.charCode <= 57;
+  }
 
 }
