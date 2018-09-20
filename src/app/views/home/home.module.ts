@@ -41,6 +41,8 @@ import { WINDOW_PROVIDERS } from '../../shared/helpers/window.helper';
 import {WorksComponent} from './works/works.component';
 import {HttpClientModule} from '@angular/common/http';
 import {HeaderComponent} from './header/header.component';
+import {ModalGalleryComponent} from './modal-gallery/modal-gallery.component';
+import { GalleryModule } from 'ng-gallery';
 
 
 @NgModule({
@@ -62,7 +64,13 @@ import {HeaderComponent} from './header/header.component';
     FlexLayoutModule,
     NguCarouselModule,
     HttpClientModule,
-    RouterModule.forChild(HomeRoutes)
+    RouterModule.forChild(HomeRoutes),
+    GalleryModule.forRoot({
+      style: {
+        height: '500px',
+        width: '700px'
+      }
+    })
   ],
   declarations: [
     HomeOneComponent,
@@ -82,7 +90,8 @@ import {HeaderComponent} from './header/header.component';
     ServicesCarouselComponent,
     DemoComponent,
     AllSectionsComponent,
-    WorksComponent
+    WorksComponent,
+    ModalGalleryComponent
   ],
   providers: [WINDOW_PROVIDERS]
 
