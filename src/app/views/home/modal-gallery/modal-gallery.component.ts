@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Gallery } from 'ng-gallery';
+import { Gallery, GalleryItem } from 'ng-gallery';
 
 @Component({
   selector: 'app-modal-gallery',
@@ -14,6 +14,23 @@ export class ModalGalleryComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    // const images: GalleryItem[] = [
+    //   {
+    //     src: '../../../assets/images/cottages/DSC_0046.JPG',
+    //     thumbnail: '../../../assets/images/cottages/DSC_0046.JPG',
+    //     text: 'Cottage 1'
+    //   },
+    //   {
+    //     src: '../../../assets/images/cottages/DSC_0047.JPG',
+    //     thumbnail: '../../../assets/images/cottages/DSC_0047.JPG',
+    //     text: 'Cottage 2'
+    //   },{
+    //     src: '../../../assets/images/cottages/DSC_0048.JPG',
+    //     thumbnail: '../../../assets/images/cottages/DSC_0048.JPG',
+    //     text: 'Cottage 3'
+    //   }
+    // ];
+    //
+    // this.gallery.load(images);
   }
 }
