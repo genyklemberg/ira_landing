@@ -23,8 +23,6 @@
     }
   }
 
-  //.form-wrap {
-  //  position: relative;
     .submit-form {
       position: absolute;
       z-index: 10;
@@ -49,27 +47,29 @@
 
       .intro-cta {
         max-width: 100%;
-        //margin-left: auto;
-        //margin-right: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
       }
 
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0,0,0,0);
-        border: 0;
-      }
-
     }
-  //}
 
 }
 
+
+@media (max-width: 767px) {
+  .container {
+    .iframe-wrap {
+      iframe {
+        top: 95%;
+      }
+      .submit-form {
+        width: 100%;
+        padding: 5px;
+        left:0;
+      }
+    }
+  }
+
+}
