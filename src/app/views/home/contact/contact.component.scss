@@ -32,7 +32,7 @@
       position: absolute;
       z-index: 10;
       top: 0;
-      left: 35%;
+      left: 0;
       background: #fff;
       padding: 20px;
       width: 300px;
@@ -61,7 +61,7 @@
     }
 
 }
-.place-card-large {
+::ng-deep .place-card-large {
   display: none !important;
 }
 
