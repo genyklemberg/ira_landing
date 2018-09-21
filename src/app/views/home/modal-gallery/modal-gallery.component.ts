@@ -9,9 +9,7 @@ import { Gallery, GalleryItem } from 'ng-gallery';
 })
 export class ModalGalleryComponent implements OnInit {
 
-  constructor(public gallery: Gallery) {
-
-  }
+  constructor(public gallery: Gallery) {}
 
   ngOnInit() {
     // const images: GalleryItem[] = [
