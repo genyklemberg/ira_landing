@@ -2,4 +2,11 @@
   .main-text {
     margin: 20px auto;
   }
+  button {
+    color: #ffffff;
+    transition: 0.6s;
+  }
+  button:hover {
+    background: #268469;
+  }
 }
