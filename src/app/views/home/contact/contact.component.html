@@ -2,27 +2,75 @@
   <div class="container">
     <div class="section-header">
       <h2 class="main-text">ВІДДІЛ ПРОДАЖУ:</h2>
-      <a href="tel:+380673713288" class="text-center"><span>+380 67 3713 288 </span> РОМАН</a>
+      <h2><a href="tel:+380673713288" class="text-center"><span>+380 67 3713 288 </span> РОМАН</a></h2>
+      <!--<a href="tel:+380673713288" class="text-center"><span>+380 67 3713 288 </span> РОМАН</a>-->
     </div>
 
     <div class="iframe-wrap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.13677680529!2d24.007000215888546!3d49.821094440392045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae78f60dd6d33:0xf9512d48b07dc0bb!2z0LLRg9C70LjRhtGPINCa0YPQu9C40LrRltCy0YHRjNC60LAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1537267041451"
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.13677680529!2d24.007000215888546!3d49.821094440392045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1suk!2sua!4v1537267041451"
               width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+      <!--<form method="POST" #f="ngForm"-->
+            <!--novalidate [formGroup]="contactForm" class="submit-form">-->
+
+        <!--<div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap">-->
+          <!--<div fxFlex="100">-->
+            <!--<div class="pb-1">-->
+              <!--<h3>Contact Us</h3>-->
+              <!--<h5>Залишіть ваші контакти і наш менеджер до вас зателефонує!</h5>-->
+              <!--<p>Краще один раз побачити!</p>-->
+              <!--<p class="asterisk">Поля, відмічені <span>*</span> обов’язкові</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <!--<div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap">-->
+          <!--<div fxFlex="100">-->
+            <!--<div class="pb-1">-->
+              <!--<mat-form-field class="full-width">-->
+                <!--<input matInput name="name" [formControl]="contactForm.controls['name']" placeholder="Ім’я та Прізвище*">-->
+              <!--</mat-form-field>-->
+              <!--<small *ngIf="contactForm.controls.name.touched && contactForm.controls.name.errors?.required"-->
+                     <!--class="form-error-msg">Ім’я та Прізвище обов’язкові</small>-->
+            <!--</div>-->
+            <!--<div class="pb-1">-->
+              <!--<mat-form-field class="full-width">-->
+                <!--<input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Ваш Email*">-->
+              <!--</mat-form-field>-->
+              <!--<small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email"-->
+                     <!--class="form-error-msg">Неправильний Email</small>-->
+            <!--</div>-->
+
+          <!--</div>-->
+          <!--<div fxFlex="100">-->
+            <!--<div class="pb-1">-->
+              <!--<mat-form-field class="full-width">-->
+                <!--<input matInput name="mobile" [formControl]="contactForm.controls['mobile']"-->
+                       <!--placeholder="Ваш телефон" (keypress)="onlyNumberKey($event)">-->
+              <!--</mat-form-field>-->
+            <!--</div>-->
+          <!--</div>-->
+
+          <!--<div fxFlex="100">-->
+            <!--<button mat-fab color="primary" (click)="clear()" [disabled]="!contactForm.valid">-->
+              <!--<mat-icon>send</mat-icon>-->
+            <!--</button>-->
+          <!--</div>-->
+
+        <!--</div>-->
+      <!--</form>-->
+
       <form method="POST" #f="ngForm"
             novalidate [formGroup]="contactForm" class="submit-form">
-
         <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap">
+
           <div fxFlex="100">
             <div class="pb-1">
-              <h3>Contact Us</h3>
-              <h5>Залишіть ваші контакти і наш менеджер до вас зателефонує!</h5>
+              <h3>Залишіть ваші контакти і наш менеджер до вас зателефонує!</h3>
               <p>Краще один раз побачити!</p>
-              <p class="asterisk">Поля, відмічені <span>*</span> обов’язкові</p>
+              <!--<p class="asterisk">Поля, відмічені <span>*</span> обов’язкові</p>-->
             </div>
           </div>
-        </div>
 
-        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap">
           <div fxFlex="100">
             <div class="pb-1">
               <mat-form-field class="full-width">
@@ -38,8 +86,8 @@
               <small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email"
                      class="form-error-msg">Неправильний Email</small>
             </div>
-
           </div>
+
           <div fxFlex="100">
             <div class="pb-1">
               <mat-form-field class="full-width">
@@ -49,20 +97,12 @@
             </div>
           </div>
 
-          <!--<div fxFlex="100">-->
-            <!--<button-->
-              <!--mat-raised-button mat-lg-button class="intro-cta"-->
-              <!--[disabled]="!contactForm.valid" color="accent" (click)="clear()">Відправити <mat-icon>send</mat-icon></button>-->
-          <!--</div>-->
-
           <div fxFlex="100">
-            <button mat-fab color="primary" (click)="clear()" [disabled]="!contactForm.valid">
-              <mat-icon>send</mat-icon>
-            </button>
+            <button mat-fab color="primary" [disabled]="!contactForm.valid"><mat-icon>send</mat-icon></button>
           </div>
-
         </div>
       </form>
+
     </div>
 
     <!--<div class="form-wrap">-->
