@@ -5,4 +5,12 @@
   .change-position {
     margin: 0 0 1rem!important;
   }
+
+  button:hover {
+    background: #268469;
+  }
+  button:hover .text-muted {
+    color: #ffffff !important;
+    background: #268469;
+  }
 }

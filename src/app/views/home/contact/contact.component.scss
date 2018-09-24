@@ -1,3 +1,8 @@
+#contact-section {
+  .container {
+    max-width: 100%;
+  }
+}
 .container {
   position: relative;
 
@@ -9,7 +14,7 @@
     .text-center {
       span {
         color: #006e4f;
-        font-size: 18px;
+        //font-size: 18px;
         font-weight: bold;
       }
     }
@@ -27,43 +32,41 @@
       }
     }
   }
-
-    .submit-form {
-      position: absolute;
-      z-index: 10;
-      top: 0;
-      left: 35%;
-      background: #fff;
-      padding: 20px;
-      width: 300px;
-
-      .pb-1 {
-        padding-bottom: 0 !important;
-        h3 {
-          margin-top: 0;
-        }
-        p {
-          margin-bottom: 10px;
-          &.asterisk {
-            color: #808080;
-          }
+  .submit-form {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    height: 410px;
+    .pb-1 {
+      padding-bottom: 0 !important;
+      h3 {
+        margin-top: 0;
+      }
+      p {
+        margin-bottom: 10px;
+        &.asterisk {
+          color: #808080;
         }
       }
-
-      .intro-cta {
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-
     }
+    .intro-cta {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
 }
-.place-card-large {
-  display: none !important;
-}
+
+//::ng-deep .place-card-large {
+//  display: none !important;
+//}
 
 @media (max-width: 767px) {
   .container {
