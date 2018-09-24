@@ -1,6 +1,11 @@
 .container {
   .main-text {
-    margin-top: 40px;
+    padding-top: 40px;
+  }
+  div {
+    &:last-child {
+      padding-bottom: 40px;
+    }
   }
   .change-position {
     margin: 0 0 1rem!important;
