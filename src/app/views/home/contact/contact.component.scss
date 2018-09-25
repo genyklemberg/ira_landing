@@ -34,7 +34,7 @@
     }
   }
   .submit-form {
-    display: none;
+    //display: none;
     position: absolute;
     z-index: 10;
     top: 0;
@@ -77,8 +77,11 @@
 @media (max-width: 767px) {
   .container {
     .iframe-wrap {
+      height: 870px;
+      flex-grow: 1;
       iframe {
-        top: 95%;
+        top: 410px;
+        //top: 95%;
       }
       .submit-form {
         width: 100%;
