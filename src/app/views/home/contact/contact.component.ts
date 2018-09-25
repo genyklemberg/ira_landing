@@ -1,11 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input, ViewEncapsulation} from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  // encapsulation: ViewEncapsulation.None
 })
 export class ContactComponent implements OnInit {
   @Input('backgroundGray') public backgroundGray;

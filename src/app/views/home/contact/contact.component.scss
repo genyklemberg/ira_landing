@@ -34,7 +34,7 @@
     }
   }
   .submit-form {
-    //display: none;
+    display: none;
     position: absolute;
     z-index: 10;
     top: 0;
@@ -66,9 +66,9 @@
 
 }
 
-.gm-style > div:nth-child(1){
+.gm-style:host > div:nth-child(10) {
   border: 2px solid red;
-  right: 50px;
+  right: 50px !important;
 }
 //::ng-deep .place-card-large {
 //  display: none !important;
