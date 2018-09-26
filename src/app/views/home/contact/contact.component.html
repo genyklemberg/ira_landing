@@ -3,7 +3,6 @@
     <div class="section-header">
       <h2 class="main-text">ВІДДІЛ ПРОДАЖУ:</h2>
       <h2><a href="tel:+380673713288" class="text-center"><span>+380 67 3713 288 </span> РОМАН</a></h2>
-      <!--<a href="tel:+380673713288" class="text-center"><span>+380 67 3713 288 </span> РОМАН</a>-->
     </div>
 
     <div class="iframe-wrap">
@@ -98,7 +97,7 @@
           </div>
 
           <div fxFlex="100">
-            <button mat-fab color="primary" [disabled]="!contactForm.valid"><mat-icon>send</mat-icon></button>
+            <button mat-fab color="primary" (click)="clear()" [disabled]="!contactForm.valid"><mat-icon>send</mat-icon></button>
           </div>
         </div>
       </form>
