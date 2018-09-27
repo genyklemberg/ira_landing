@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+declare const lightGallery: any;
 
 @Component({
   selector: 'app-services',
@@ -8,7 +9,11 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ServicesComponent implements OnInit {
   @Input('backgroundGray') public backgroundGray;
 
+
   ngOnInit() {
+    lightGallery(document.getElementById('lightgallery'));
+    const c = lightGallery(document.getElementById('lightgallery'));
+    console.log('l: ', lightGallery, c);
   }
 
 }
