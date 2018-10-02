@@ -53,11 +53,16 @@
   #feature-desc {
     .container {
       .row {
-        flex-flow: row wrap;
+        //flex-flow: row wrap;
+
+        display: flex !important;
+        overflow-x: auto;
+        flex-flow: nowrap !important;
         .col-4 {
-          //width: 33.33333333%;
-          //float: left;
-          flex: 0 0 100%;
+          //flex: 0 0 100%;
+
+          margin-right: 10px;
+          flex: 1 0 90% !important;
         }
       }
     }
