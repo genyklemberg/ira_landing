@@ -79,6 +79,16 @@
   .top-menu {
       display: none !important;
   }
+  .top-menu {
+    .info {
+      //line-height: 35px;
+      //margin-top: 7px !important;
+      //a:first-child {
+      //  padding-right: 30px !important;
+      //}
+    }
+
+  }
   .menu-opened:host .top-menu {
       display: block !important;
       width: 100% !important;
