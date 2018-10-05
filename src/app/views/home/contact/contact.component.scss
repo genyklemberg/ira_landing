@@ -80,6 +80,13 @@
 
 @media (max-width: 767px) {
   .container {
+    .section-header {
+      h2 {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
     .iframe-wrap {
       height: 870px;
       flex-grow: 1;
