@@ -100,4 +100,9 @@
       width: 100%;
       line-height: 56px !important;
   }
+  .menu-opened:host .top-menu .info a {
+    display: block;
+    width: 100%;
+    line-height: 56px !important;
+  }
 }
