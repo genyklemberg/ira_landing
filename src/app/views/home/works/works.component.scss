@@ -5,6 +5,13 @@
   .main-text {
     margin: 20px auto;
   }
+
+  .card-wrap {
+    mat-card {
+      height: 400px;
+    }
+  }
+
   button {
     color: #ffffff;
   }
