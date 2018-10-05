@@ -2,22 +2,26 @@
   <div class="container">
     <div class="section-header">
       <h2 class="main-text">Наші цінові пропозиції</h2>
-      <mat-slide-toggle [(ngModel)]="isAnnualSelected" color="primary" class="mb-1">Get upto 10% discount annually</mat-slide-toggle>
+      <!--<mat-slide-toggle -->
+        <!--[(ngModel)]="isAnnualSelected" -->
+        <!--color="primary" -->
+        <!--class="mb-1">Get upto 10% discount annually-->
+      <!--</mat-slide-toggle>-->
     </div>
 
     <div class="wrap" fxLayout="row" fxLayoutWrap="wrap">
       <!-- Pricing box -->
-      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="100">
+      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="100">
         <mat-card class="plan-pricing text-center p-0">
           <mat-card-title class="light-gray">
             <div class="card-title-text">
-              <div class="">Developer</div>
-              <div class="text-sm text-muted">For New Developers</div>
+              <div class="">Котедж 1</div>
+              <div class="text-sm text-muted">Площа 168, 6 м²</div>
             </div>
             <mat-divider></mat-divider>
           </mat-card-title>
           <mat-card-content>
-            <h1><strong>FREE</strong></h1>
+            <h1><strong>31 500 грн. м²</strong></h1>
             <mat-list dense class="mb-1">
               <mat-list-item>10GB of Bandwidth</mat-list-item>
               <mat-list-item>Max 50 connection</mat-list-item>
@@ -31,21 +35,18 @@
         </mat-card>
       </div>
       <!-- Pricing box -->
-      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="50">
+      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50">
         <mat-card class="plan-pricing text-center p-0">
           <mat-card-title class="mat-bg-primary">
             <div class="card-title-text">
-              <div class="">Starter</div>
-              <div class="text-sm text-muted-white">For Professional Developers</div>
+              <div class="">Котедж 2</div>
+              <div class="text-sm text-muted-white">Площа 168, 6 м²</div>
             </div>
             <mat-divider></mat-divider>
           </mat-card-title>
           <mat-card-content>
             <h1>
-              <strong>$
-                  <span *ngIf="!isAnnualSelected">{{30}} /Mo</span>
-                  <span *ngIf="isAnnualSelected">{{30 * 12 * .9}} /Yr</span>
-                  </strong>
+              <strong>28 500 грн. м²</strong>
             </h1>
             <mat-list dense class="mb-1">
               <mat-list-item>100GB of Bandwidth</mat-list-item>
@@ -60,21 +61,46 @@
         </mat-card>
       </div>
       <!-- Pricing box -->
-      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="50">
+      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50">
         <mat-card class="plan-pricing text-center p-0">
           <mat-card-title class="light-gray">
             <div class="card-title-text">
-              <div class="">Business</div>
-              <div class="text-sm text-muted">For Small Businesses</div>
+              <div class="">Котедж 3</div>
+              <div class="text-sm text-muted">Куликівська 39Г</div>
+              <div class="text-sm text-muted">Площа 168, 5 м²</div>
             </div>
             <mat-divider></mat-divider>
           </mat-card-title>
           <mat-card-content>
             <h1>
-              <strong>$
-                  <span *ngIf="!isAnnualSelected">{{60}} /Mo</span>
-                  <span *ngIf="isAnnualSelected">{{60 * 12 * .9}} /Yr</span>
-                  </strong>
+              <strong>33 900 грн. м²</strong>
+            </h1>
+            <mat-list dense class="mb-1">
+              <mat-list-item>100GB of Bandwidth</mat-list-item>
+              <mat-list-item>Max 1500 connection</mat-list-item>
+              <mat-list-item>2GB RAM</mat-list-item>
+              <mat-list-item>Unlimited access</mat-list-item>
+              <mat-list-item>Unlimited User</mat-list-item>
+              <mat-list-item class="text-muted">Data analytics</mat-list-item>
+            </mat-list>
+            <button mat-raised-button class="mat-accent">Забронювати</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- Pricing box -->
+      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50">
+        <mat-card class="plan-pricing text-center p-0">
+          <mat-card-title class="light-gray">
+            <div class="card-title-text">
+              <div class="">Котедж 4</div>
+              <div class="text-sm text-muted">Куликівська 39Г</div>
+              <div class="text-sm text-muted">Площа 167, 8 м²</div>
+            </div>
+            <mat-divider></mat-divider>
+          </mat-card-title>
+          <mat-card-content>
+            <h1>
+              <strong>31 500 грн. м²</strong>
             </h1>
             <mat-list dense class="mb-1">
               <mat-list-item>100GB of Bandwidth</mat-list-item>
