@@ -5,8 +5,8 @@ import { LandingFixService } from '../../shared/services/landing-fix.service';
   selector: 'app-home-one',
   template: `<app-header></app-header>
   <app-intro></app-intro>
-  <app-portfolio></app-portfolio>
   <app-cta></app-cta>
+  <app-portfolio></app-portfolio>
   <app-works></app-works>
   <app-services [backgroundGray]="true"></app-services>
   <app-pricings></app-pricings>
