@@ -1,5 +1,12 @@
 .portfolio {
   padding: 40px 0;
+  .container {
+    .section-header {
+      p {
+        max-width: 100%;
+      }
+    }
+  }
 }
 .container {
   .main-text {
@@ -8,7 +15,34 @@
 
   .card-wrap {
     mat-card {
-      height: 400px;
+      height: 500px;
+      mat-card-content {
+        //p {
+        //  height: 100px;
+        //}
+      }
+
+    }
+    &:nth-child(2) {
+      p {
+        &:last-of-type {
+          margin-bottom: 73px;
+        }
+      }
+    }
+    &:nth-child(3) {
+      p {
+        &:last-of-type {
+          margin-bottom: 110px;
+        }
+      }
+    }
+    &:nth-child(4) {
+      p {
+        &:last-of-type {
+          margin-bottom: 183px;
+        }
+      }
     }
   }
 
@@ -35,6 +69,13 @@
   .card-wrap {
     margin-right: 10px;
     flex: 1 0 90% !important;
+    mat-card {
+      mat-card-content {
+        p {
+          height: 100px;
+        }
+      }
+    }
   }
 
 }
