@@ -1,5 +1,5 @@
 .home-cta {
-  background-color: #4D9A84;
+  background: url('../../../../assets/images/parkbg.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,6 +8,10 @@
   padding: 80px 0;
   //margin-top: 20px;
   //margin-bottom: 50px;
+  .text-wrap {
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+  }
   button {
     color: #ffffff;
     transition: 0.6s;
