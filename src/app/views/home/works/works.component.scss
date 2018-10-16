@@ -15,11 +15,12 @@
 
   .card-wrap {
     mat-card {
-      height: 500px;
+      //height: 500px;
       mat-card-content {
-        //p {
-        //  height: 100px;
-        //}
+        height: 200px;
+        p {
+          margin: 0 0 7px 0;
+        }
       }
 
     }
