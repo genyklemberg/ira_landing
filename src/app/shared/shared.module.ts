@@ -32,8 +32,8 @@ import { ScrollToDirective } from './directives/scroll-to.directive';
 
 
 // SERVICES
-import { AuthGuard } from './services/auth/auth.guard';
-import { AppLoaderService } from './services/app-loader/app-loader.service';
+// import { AuthGuard } from './services/auth/auth.guard';
+// import { AppLoaderService } from './services/app-loader/app-loader.service';
 import { LandingFixService } from '../shared/services/landing-fix.service';
 
 const classesToInclude = [
@@ -59,8 +59,8 @@ const classesToInclude = [
   ],
   entryComponents: [AppLoaderComponent],
   providers: [
-    AuthGuard,
-    AppLoaderService,
+    // AuthGuard,
+    // AppLoaderService,
     LandingFixService
   ],
   declarations: classesToInclude,

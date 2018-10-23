@@ -13,9 +13,6 @@
 # Media Queries
 */
 
-/*@import "~lightgallery.js/dist/css/lightgallery.css"; !* add this on top of style.css *!*/
-@import "../lightgallery.js/dist/css/lightgallery.min.css";
-
 /*---- Globals -----*/
 html {
     font-size: 16px;

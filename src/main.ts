@@ -1,4 +1,4 @@
-import  './polyfills';
+import './polyfills';
 
 import './vendor/pace/pace.min.js';
 import '../node_modules/hammerjs/hammer.js';

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Gallery, GalleryItem } from 'ng-gallery';
+import {MatDialog} from '@angular/material';
+import {DialogComponent} from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-works',
@@ -9,8 +10,15 @@ import { Gallery, GalleryItem } from 'ng-gallery';
 export class WorksComponent implements OnInit {
   @Input('backgroundGray') public backgroundGray;
 
-  constructor(public gallery: Gallery) { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {}
+
+  openDialog(): void {
+    this.dialog.open(DialogComponent, {
+      width: '500px',
+      height: 'auto'
+    });
+  }
 
 }

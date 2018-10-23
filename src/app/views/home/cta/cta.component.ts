@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DialogComponent} from '../dialog/dialog.component';
+import {MatDialog} from '@angular/material';
 
 @Component({
   selector: 'app-cta',
@@ -7,12 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CtaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
   }
 
-  buyEgret() {
-    // window.open('https://themeforest.net/item/egret-angular-4-material-design-admin-template/20161805?ref=mh_rafi');
+  openDialog(): void {
+    this.dialog.open(DialogComponent, {
+      width: '500px',
+      height: 'auto'
+    });
   }
 }

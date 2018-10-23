@@ -105,9 +105,6 @@ $primary-dark: darken( map-get($mat-primary, 500), 8% );
     .list-item-active {
         border-color: map-get($mat-primary, 500) !important;
     }
-    .sidebar-panel {
-        background: url('../../assets/images/sidebar-bg.jpg') no-repeat;
-    }
     .sidebar-compact ul.submenu,
     .default-bg {
         background: #ffffff !important;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material';
+import {DialogComponent} from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-intro',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroOneComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
     // const promise = document.querySelector('video').play();
@@ -24,5 +26,12 @@ export class IntroOneComponent implements OnInit {
     //     });
     //   });
     // }
+  }
+
+  openDialog(): void {
+    this.dialog.open(DialogComponent, {
+      width: '500px',
+      height: 'auto'
+    });
   }
 }

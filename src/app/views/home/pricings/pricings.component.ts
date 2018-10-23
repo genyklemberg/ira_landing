@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {DialogComponent} from '../dialog/dialog.component';
+import {MatDialog} from '@angular/material';
 
 @Component({
   selector: 'app-pricings',
@@ -7,10 +9,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PricingsComponent implements OnInit {
   @Input('backgroundGray') public backgroundGray;
-  isAnnualSelected: boolean = false;
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
+  }
+
+  openDialog(): void {
+    this.dialog.open(DialogComponent, {
+      width: '500px',
+      height: 'auto'
+    });
   }
 
 }
