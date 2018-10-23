@@ -13,7 +13,7 @@ export class ServicesComponent implements OnInit {
   ngOnInit() {
     lightGallery(document.getElementById('lightgallery'));
     const c = lightGallery(document.getElementById('lightgallery'));
-    console.log('l: ', lightGallery, c);
+    // console.log('l: ', lightGallery, c);
   }
 
 }

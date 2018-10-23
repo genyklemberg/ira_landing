@@ -25,30 +25,30 @@ export class ContactComponent implements OnInit {
   }
 
   clear() {
-    this.contactForm.reset();
+    this.onSubmit(this.contactForm);
+    // this.contactForm.reset();
   }
 
-  // onSubmit(form) {
-  //   console.log('Form Submitted!');
-  //   const array_new = {};
-  //   array_new['phone'] = form.value.mobile;
-  //   array_new['address_customer'] = form.value.address;
-  //   array_new['name_customer'] = form.value.name;
-  //   console.log(array_new);
-  //   const headers = new HttpHeaders()
-  //     .set('Authorization', 'my-auth-token')
-  //     .set('Content-Type', 'application/json');
-  //
-  //   this.http.post('http://127.0.0.1:3000/send', JSON.stringify(array_new), {
-  //     headers: headers
-  //   })
-  //     .subscribe(data => {
-  //       console.log('form data: ', data);
-  //     });
-  //
-  //   form.reset();
-  // }
-  //
+  onSubmit(form) {
+    const array_new = {};
+    array_new['phone'] = form.value.mobile;
+    array_new['email'] = form.value.email;
+    array_new['name'] = form.value.name;
+    console.log(array_new);
+    const headers = new HttpHeaders()
+      // .set('Authorization', 'my-auth-token')
+      .set('Content-Type', 'application/json');
+
+    this.http.post('https://formspree.io/aputop@yahoo.com', JSON.stringify(array_new), {
+      headers: headers
+    })
+      .subscribe(data => {
+        console.log('form data: ', data);
+      });
+
+    form.reset();
+  }
+
   onlyNumberKey(event) {
     return (event.charCode === 8 || event.charCode === 0)
       ? null : event.charCode >= 48 && event.charCode <= 57;

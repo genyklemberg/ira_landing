@@ -9,5 +9,20 @@ export class IntroOneComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // const promise = document.querySelector('video').play();
+    //
+    // if (promise !== undefined) {
+    //   promise.then(_ => {
+    //     // Autoplay started!
+    //     const btn = document.getElementById('unmuteButton');
+    //     btn.style.display = 'none';
+    //   }).catch(error => {
+    //     // Autoplay was prevented.
+    //     document.querySelector('#unmuteButton').addEventListener('click', function() {
+    //       document.querySelector('video').play();
+    //     });
+    //   });
+    // }
+  }
 }
