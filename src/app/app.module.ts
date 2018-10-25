@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
-    RouterModule.forRoot(rootRouterConfig, { useHash: false })
+    RouterModule.forRoot(rootRouterConfig, { useHash: false }),
   ],
   declarations: [AppComponent],
   providers: [],

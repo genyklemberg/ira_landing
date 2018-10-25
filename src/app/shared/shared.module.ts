@@ -35,6 +35,7 @@ import { ScrollToDirective } from './directives/scroll-to.directive';
 // import { AuthGuard } from './services/auth/auth.guard';
 // import { AppLoaderService } from './services/app-loader/app-loader.service';
 import { LandingFixService } from '../shared/services/landing-fix.service';
+import {ScrollToModule} from '@nicky-lenaers/ngx-scroll-to';
 
 const classesToInclude = [
   AppLoaderComponent,
@@ -46,6 +47,7 @@ const classesToInclude = [
   imports: [
     CommonModule,
     FormsModule,
+    ScrollToModule.forRoot(),
     RouterModule,
     FlexLayoutModule,
     MatMenuModule,
@@ -64,6 +66,9 @@ const classesToInclude = [
     LandingFixService
   ],
   declarations: classesToInclude,
-  exports: classesToInclude
+  exports: [
+    ScrollToModule,
+    classesToInclude
+  ]
 })
 export class SharedModule { }

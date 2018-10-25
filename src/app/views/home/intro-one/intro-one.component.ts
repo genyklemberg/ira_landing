@@ -34,4 +34,5 @@ export class IntroOneComponent implements OnInit {
       height: 'auto'
     });
   }
+
 }

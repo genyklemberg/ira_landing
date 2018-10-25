@@ -1,24 +1,30 @@
-<section class="home-section home-cta">
+<section class="home-section light-gray home-cta" id="cta">
   <div class="container">
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="20px">
-      <div fxFlex="65" class="text-wrap" style='padding-left: 10px'>
-        <h2>Котеджі на Куликівській</h2>
-        <p>Котеджі на Куликівській - 6 спарених просторих котеджів в парковому районі Львова від забудовника.
-          Ми створили для вас затишний комплекс в одному з найближчих до центру спальних районів.
-          Сучасне оформлення, сертифіковані матеріали будівництва, закрита територія та розвинена
-          інфраструктура - створять для вас справжній сімейний затишок.
-        </p>
-        <h2>Переваги нашого котеджного комплексу</h2>
-        <ul class="advantages">
-          <li>- Сертифіковані матеріали будівництва</li>
-          <li>- Оформлення земельної ділянки у власність</li>
-          <li>- Близьке розташування до центру</li>
-          <li>- Можливість встановлення сауни, каміну</li>
-          <li>- Можливість встановлення альтернативного опалення</li>
-          <li>- Котеджі здано в експлуатацію</li>
-        </ul>
+    <div fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="20px">
+      <div fxLayout="column" style='padding-left: 10px'>
+        <mat-card style='margin-top: 25px'>
+          <h2>Котеджі на Куликівській</h2>
+          <mat-divider class="mb-1 mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+          <p>Котеджі на Куликівській - 6 спарених просторих котеджів в парковому районі Львова від забудовника.
+            Ми створили для вас затишний комплекс в одному з найближчих до центру спальних районів.
+            Сучасне оформлення, сертифіковані матеріали будівництва, закрита територія та розвинена
+            інфраструктура - створять для вас справжній сімейний затишок.
+          </p>
+        </mat-card>
+        <mat-card style='margin-top: 25px'>
+          <h2>Переваги нашого котеджного комплексу</h2>
+          <mat-divider class="mb-1 mat-divider" role="separator" aria-orientation="horizontal"></mat-divider>
+          <ul class="advantages">
+            <li>- Сертифіковані матеріали будівництва</li>
+            <li>- Оформлення земельної ділянки у власність</li>
+            <li>- Близьке розташування до центру</li>
+            <li>- Можливість встановлення сауни, каміну</li>
+            <li>- Можливість встановлення альтернативного опалення</li>
+            <li>- Котеджі здано в експлуатацію</li>
+          </ul>
+        </mat-card>
       </div>
-      <div fxFlex="35" fxLayoutAlign="center center" class="button-wrap">
+      <div fxLayoutAlign="center center" class="button-wrap">
         <button mat-raised-button mat-lg-button color="accent"
                 (click)="openDialog()">Зареєструватися на індивідуальну екскурсію</button>
       </div>
