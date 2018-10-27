@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Gallery, GalleryItem } from 'ng-gallery';
-declare const lightGallery: any;
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
+import {Gallery, GalleryItem} from 'ng-gallery';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  styleUrls: ['./services.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ServicesComponent implements OnInit {
   @Input('backgroundGray') public backgroundGray;
@@ -72,9 +72,6 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit() {
     this.gallery.load(this.images);
-    // lightGallery(document.getElementById('lightgallery'));
-    // const c = lightGallery(document.getElementById('lightgallery'));
-    // console.log('l: ', lightGallery, c);
   }
 
   openGallery() {

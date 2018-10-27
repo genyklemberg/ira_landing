@@ -2,42 +2,16 @@
   <div class="container">
     <div class="section-header">
       <h2 class="main-text">Наші цінові пропозиції</h2>
-      <!--<mat-slide-toggle -->
-        <!--[(ngModel)]="isAnnualSelected" -->
-        <!--color="primary" -->
-        <!--class="mb-1">Get upto 10% discount annually-->
-      <!--</mat-slide-toggle>-->
     </div>
 
     <div class="wrap" fxLayout="row" fxLayoutWrap="wrap">
-      <!-- Pricing box -->
-      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="100">
-        <mat-card class="plan-pricing text-center p-0">
-          <mat-card-title class="light-gray">
-            <div class="card-title-text">
-              <div class="">Котедж 1</div>
-              <!--<div class="text-sm text-muted">Площа 168, 6 м²</div>-->
-            </div>
-            <mat-divider></mat-divider>
-          </mat-card-title>
-          <mat-card-content>
-            <h1><strong>31 500 грн. м²</strong></h1>
-            <mat-list dense class="mb-1">
-              <mat-list-item>Площа 168, 6 м²</mat-list-item>
-              <mat-list-item>розтермінування</mat-list-item>
-              <div style='height: 35px'></div>
-            </mat-list>
-            <button mat-raised-button class="mat-accent" (click)="openDialog()">Забронювати</button>
-          </mat-card-content>
-        </mat-card>
-      </div>
       <!-- Pricing box -->
       <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50">
         <mat-card class="plan-pricing text-center p-0">
           <div class="ribbon"><span>Акція</span></div>
           <mat-card-title class="mat-bg-primary">
             <div class="card-title-text">
-              <div class="">Котедж 2</div>
+              <div class="">Котедж 1</div>
               <div class="text-sm text-muted-white"></div>
             </div>
             <mat-divider></mat-divider>
@@ -52,6 +26,26 @@
                 <strong style='font-weight: bold; font-size: 25px; color: #0D311F'>24 900 грн м²</strong>
               </mat-list-item>
               <mat-list-item>Ація до 31.11</mat-list-item>
+            </mat-list>
+            <button mat-raised-button class="mat-accent" (click)="openDialog()">Забронювати</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- Pricing box -->
+      <div class="card-wrap" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="100">
+        <mat-card class="plan-pricing text-center p-0">
+          <mat-card-title class="light-gray">
+            <div class="card-title-text">
+              <div class="">Котедж 2</div>
+            </div>
+            <mat-divider></mat-divider>
+          </mat-card-title>
+          <mat-card-content>
+            <h1><strong>31 500 грн. м²</strong></h1>
+            <mat-list dense class="mb-1">
+              <mat-list-item>Площа 168, 6 м²</mat-list-item>
+              <mat-list-item>розтермінування</mat-list-item>
+              <div style='height: 35px'></div>
             </mat-list>
             <button mat-raised-button class="mat-accent" (click)="openDialog()">Забронювати</button>
           </mat-card-content>

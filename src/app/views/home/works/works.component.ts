@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {MatDialog} from '@angular/material';
 import {DialogComponent} from '../dialog/dialog.component';
+import {DialogViewComponent} from '../dialog/dialog-view.component';
 
 @Component({
   selector: 'app-works',
@@ -21,4 +22,10 @@ export class WorksComponent implements OnInit {
     });
   }
 
+  openView(src): void {
+    this.dialog.open(DialogViewComponent, {
+      panelClass: 'my-full-screen-dialog',
+      data: src
+    });
+  }
 }

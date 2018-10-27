@@ -20,6 +20,27 @@
   }
 }
 
+//.dialog-overlay gallery-lightbox {
+//  max-width: 1000px;
+//  max-height: 1000px;
+//  min-width: 320px;
+//  min-height: 500px;
+//}
+
+@media (max-width: 320px) {
+  .dialog-overlay, gallery-lightbox, gallery, gallery-main {
+    height: 500px !important;
+    width: 310px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .dialog-overlay, gallery-lightbox, gallery, gallery-main {
+    height: 500px !important;
+    width: 380px !important;
+  }
+}
+
 @media (max-width: 767px) {
 
   .wrap {

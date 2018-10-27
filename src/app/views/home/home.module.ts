@@ -35,6 +35,7 @@ import {WorksComponent} from './works/works.component';
 import {HeaderComponent} from './header/header.component';
 import { GalleryModule } from 'ng-gallery';
 import { DialogComponent } from './dialog/dialog.component';
+import { DialogViewComponent } from './dialog/dialog-view.component';
 
 
 @NgModule({
@@ -60,9 +61,23 @@ import { DialogComponent } from './dialog/dialog.component';
     RouterModule.forChild(HomeRoutes),
     GalleryModule.forRoot({
       style: {
-        height: '500px',
-        width: '700px'
-      }
+        'width': '900px',
+        'height': '500px',
+        'background': '#245E45'
+      },
+      'player': {
+        'autoplay': true,
+        'interval': 3000,
+        'progress': false,
+        'position': 'bottom'
+      },
+      'lightbox': {
+        'backdropClass': 'g-backdrop',
+        'panelClass': 'dialog-overlay',
+        'hasBackdrop': true
+      },
+      'imageSize': 'contain',
+      'className': 'fluid'
     })
   ],
   declarations: [
@@ -76,10 +91,12 @@ import { DialogComponent } from './dialog/dialog.component';
     ContactComponent,
     FooterComponent,
     WorksComponent,
-    DialogComponent
+    DialogComponent,
+    DialogViewComponent
   ],
   entryComponents: [
-    DialogComponent
+    DialogComponent,
+    DialogViewComponent
   ],
   providers: [WINDOW_PROVIDERS]
 
